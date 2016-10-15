@@ -1,0 +1,49 @@
+# C-p: history-search-backward
+# C-n: history-search-forward
+# 
+C-w: backward-kill-word
+C-b: backward-word
+C-f: forward-word
+"\e[5D": backward-word
+"\e[5C": forward-word
+
+# 
+"\e[D": backward-char
+"\e[C": forward-char
+# #
+# # up, down
+# #
+# 
+# "\e[OA": history-search-backward
+"\e[A": history-search-backward
+# 
+# "\e[OB": history-search-forward
+"\e[B": history-search-forward
+# 
+# #
+# # home, end, delete
+# #
+# 
+"\e[1~": beginning-of-line
+# "\e[H": beginning-of-line
+# 
+"\e[4~": end-of-line
+# "\e[F": end-of-line
+# 
+"\e[3~": delete-char
+# 
+# #
+# # pageup, pagedown
+# #
+# 
+# "\e[5~": previous-history
+# "\e[6~": next-history 
+# 
+# #
+# # f2
+# #
+# 
+# "\e[[B": "l"
+# 
+set show-all-if-ambiguous Off
+set visible-stats On

@@ -1,0 +1,92 @@
+set hidden
+set history=4096
+set mousehide
+set path+=~/.vim
+set scrolloff=5
+set sidescroll=2
+set statusline=%F\ %y\ %r%m\ %=%l/%L\ %{virtcol(\".\")}\ (%p%%)
+set viminfo=!,\"1000,%,'50,h,n~/.vim/viminfo
+
+" will save file when jumping to a tag in another file (and other times)
+set autowrite
+
+" gets rid of about 80% of the 'hit-return' prompts
+set cmdheight=2
+
+" don't change alternate files for :reads
+set cpoptions-=a
+
+" don't break long lines if they're already long when you start
+" format numbered lists
+set formatoptions+=ln
+
+" remove the toolbar
+set guioptions-=T
+set guioptions-=m
+
+" always show a status line
+set laststatus=2
+
+" give hints, so we know if in insert, replace, visual, select, or normal mode
+set showmode
+
+" when highlighting stuff I can go anywhere
+set virtualedit=block
+
+" i hate the PC speaker
+set visualbell
+
+" control how wildcard matching behaves
+set wildmenu
+set wildmode=longest:full
+
+" set mouse and selection to how I like it
+behave xterm
+
+"
+" Setup Completions
+"
+
+" use dictionary for 'i_ctrl-[pn]'
+set complete+=k
+set dictionary+=/usr/share/dict/words
+set infercase
+
+"
+" Defaults for editing and displaying text.
+"
+
+" basic formatting
+set autoindent
+
+" bs behaves like in most editors
+set backspace=indent,eol,start
+
+" advanced formatting will be in ftplugins
+set nocindent
+
+" helpful for textfiles - actually not really
+" set textwidth=78
+
+" not useful for regular text.  will be turned on by ftplugins
+set noshowmatch
+
+" more easily identify strange lines
+set nowrap
+set listchars=eol:$,tab:\|\ ,trail:¿
+
+" tabs are evil
+set expandtab
+set shiftwidth=4
+set tabstop=4
+set softtabstop=4
+
+"
+" Setup Searching
+"
+
+" default is visual feedback and to disregard case, unless there is a *typed*
+" uppercase char in the text to search for
+set ignorecase
+set incsearch
+set smartcase

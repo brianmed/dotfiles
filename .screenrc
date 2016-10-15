@@ -1,0 +1,19 @@
+defscrollback 10000
+startup_message off
+escape ^Xx
+bindkey "[C" next
+bindkey "[D" prev
+bindkey "[1;5C" next
+bindkey "[1;5D" prev
+# bindkey "OC" next
+# bindkey "OD" prev
+bindkey "[1;5A" focus up
+bindkey "[1;5B" focus down
+
+# Terminal
+bindkey "[5C" next
+bindkey "[5D" prev
+
+hardstatus lastline "%?%t%:%n%?"
+shelltitle ""
+shell -/bin/zsh

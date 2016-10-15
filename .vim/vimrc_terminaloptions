@@ -1,0 +1,21 @@
+if &t_Co > 2 || has("gui_running")
+    syntax on
+
+    " set guifont=-adobe-courier-bold-r-normal--14-140-75-75-m-90-iso8859-1
+    " set guifont=-b&h-lucidatypewriter-bold-r-normal-sans-14-140-75-75-m-90-iso8859-1
+    set guifont=-adobe-courier-bold-r-normal--14-100-100-100-m-90-iso8859-1
+    " set guifont=-dec-terminal-bold-r-normal-*-*-140-*-*-c-*-iso8859-1
+
+    if has("win32")
+        set guifont=Courier:h10:cANSI
+        " set guifont=Andale_Mono:h9:b:cANSI
+    endif
+
+    if has("mac")
+        set guifont=Menlo\ Regular:h18
+    endif
+endif
+
+" colorscheme my_default
+" colorscheme morley
+colorscheme monochrome

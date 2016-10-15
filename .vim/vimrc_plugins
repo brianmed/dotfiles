@@ -1,0 +1,11 @@
+nnoremap <unique> <Leader>N :%Nlist<cr>
+vnoremap <unique> <Leader>N :Nlist<cr>
+
+let quickhigh_plugin_debug = 1
+
+let loaded_matchparen = 1
+
+" perl syntax 
+let perl_include_pod = 1
+let perl_extended_vars = 1
+let perl_want_scope_in_variables = 1

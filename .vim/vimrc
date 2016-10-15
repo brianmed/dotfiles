@@ -1,0 +1,24 @@
+" remove any unwanted vi behavior as soon as possible
+" must be first because actually has a great number of side effects
+"
+" is probably redundant, but I'm paranoid
+set nocompatible
+
+if !exists("g:source_base") 
+    let g:source_base = "~bpm/.vim"
+endif
+
+if v:progname != "vi"
+    exe "set rtp+=" . g:source_base
+    exe "set rtp+=" . g:source_base . "/after"
+
+    exe "source " . g:source_base . "/vimrc_autocmds"
+    exe "source " . g:source_base . "/vimrc_options"
+    exe "source " . g:source_base . "/vimrc_mappings"
+    exe "source " . g:source_base . "/vimrc_terminaloptions"
+    exe "source " . g:source_base . "/vimrc_plugins"
+endif
+
+if -1 != match(expand("%:p"), "/tmp/.*crontab.*")
+    set compatible
+endif
