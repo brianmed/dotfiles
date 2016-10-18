@@ -14,6 +14,7 @@ if v:progname != "vi"
 
     exe "source " . g:source_base . "/vimrc_autocmds"
     exe "source " . g:source_base . "/vimrc_options"
+    exe "source " . g:source_base . "/vimrc_functions"
     exe "source " . g:source_base . "/vimrc_mappings"
     exe "source " . g:source_base . "/vimrc_terminaloptions"
     exe "source " . g:source_base . "/vimrc_plugins"
