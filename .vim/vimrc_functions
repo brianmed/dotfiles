@@ -1,0 +1,1 @@
+exe "source " . g:source_base . "/functions/mapping_functions.vim"
