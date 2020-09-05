@@ -1,6 +1,8 @@
-ln -s "$(pwd)"/.inputrc ~
-ln -s "$(pwd)"/.screenrc ~
-ln -s "$(pwd)"/.vim ~
-ln -s "$(pwd)"/.zprofile ~
-ln -s "$(pwd)"/.zshenv ~
-ln -s "$(pwd)"/.zshrc ~
+#!/bin/sh
+
+ln -s "$PWD"/.inputrc ~
+ln -s "$PWD"/.screenrc ~
+ln -s "$PWD"/.vim ~
+ln -s "$PWD"/.zprofile ~
+ln -s "$PWD"/.zshenv ~
+ln -s "$PWD"/.zshrc ~
