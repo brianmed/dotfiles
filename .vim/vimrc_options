@@ -90,3 +90,10 @@ set softtabstop=4
 set ignorecase
 set incsearch
 set smartcase
+
+set backupdir=/Users/bpm/.vim/tmp//
+set directory=/Users/bpm/.vim/tmp//
+set undodir=/Users/bpm/.vim/tmp//
+
+set backup
+set undofile
