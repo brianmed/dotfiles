@@ -50,8 +50,6 @@ behave xterm
 set complete+=k
 set dictionary+=/usr/share/dict/words
 set infercase
-set completeopt=menuone,noinsert,noselect,popuphidden
-set completepopup=highlight:Pmenu,border:off
 
 "
 " Defaults for editing and displaying text.
@@ -92,9 +90,9 @@ set ignorecase
 set incsearch
 set smartcase
 
-set backupdir=/Users/bpm/.vim/tmp//
-set directory=/Users/bpm/.vim/tmp//
-set undodir=/Users/bpm/.vim/tmp//
+exe "set backupdir=" . g:source_base . "/tmp//"
+exe "set directory=" . g:source_base . "/tmp//"
+exe "set undodir=" . g:source_base . "/tmp//"
 
 set backup
 set undofile
