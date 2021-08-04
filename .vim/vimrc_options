@@ -22,7 +22,6 @@ set formatoptions+=ln
 
 " remove the toolbar
 set guioptions-=T
-set guioptions-=m
 
 " always show a status line
 set laststatus=2
@@ -51,6 +50,8 @@ behave xterm
 set complete+=k
 set dictionary+=/usr/share/dict/words
 set infercase
+set completeopt=menuone,noinsert,noselect,popuphidden
+set completepopup=highlight:Pmenu,border:off
 
 "
 " Defaults for editing and displaying text.
